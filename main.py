@@ -65,6 +65,10 @@ class ExampleAppDialog(QtWidgets.QDialog, dialog.Ui_Dialog):
         
         modelname = self.ClassName_line.text()
 
+        if not modelname:
+        	print('Please input the name of the model')
+        	return
+
         for i in range(5):
             if self.labeles_list[i].check.isChecked():
                 path = self.labeles_list[i].path.text()
