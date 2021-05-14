@@ -12,7 +12,7 @@ from learning import learning
 
 class Label:
     def f(self1, self):
-        print(self.name.text())
+        # print(self.name.text())
         
     def open(nisemono, self):
         directory = QtWidgets.QFileDialog.getExistingDirectory(caption = "Выберите папку")
@@ -79,7 +79,7 @@ class ExampleAppDialog(QtWidgets.QDialog, dialog.Ui_Dialog):
                 classnames.append(self.labeles_list[i].name.text())
 
         if not (len(paths) == 0):
-            print(paths, '\n\n', classnames, '\n\n', modelname)
+            # print(paths, '\n\n', classnames, '\n\n', modelname)
             try:
                 learning(paths, classnames, modelname)
             except Exception as e:
